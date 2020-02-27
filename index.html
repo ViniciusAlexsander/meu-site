@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio</title>
+    <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Oswald',sans-serif;
+            background-color: lightgray;
+        }
+
+        .cabecalho {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color: rgba(19, 104, 19, 0.336);
+            color: #eee;
+            border-bottom: solid 5px gray;
+            height: 100px;
+        }
+        .cabecalho a {
+            text-decoration: none;
+            color: white;
+            font-size: 1.5em;
+            padding: 10px 15px;
+        }
+
+        .logo img {
+            height: 150px;
+        }
+        .menu {
+            flex-grow: 10;
+        }
+        .menu ul {
+            float: right;
+            display: flex;
+            flex-grow: 1;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            margin-right: 100px;
+        }
+        menu li {
+            margin: 15px;
+        }
+        .menu a:hover {
+            background-color: gray;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <header class="cabecalho">
+        <div class="logo">
+            <a href="#inicio">
+                <img src="caçamba-png-4.png" alt="logo"/>
+            </a>
+        </div>
+
+        <nav class="menu">
+            <ul>
+                <li>
+                    <a href="/projetos">Início</a>
+                </li>
+                <li>
+                    <a href="#sobre">Sobre</a>
+                </li>
+                <li>
+                    <a href="#projetos">Projetos</a>
+                </li>
+                <li>
+                    <a href="#contato">Contato</a>
+                </li>
+            </ul>
+        </nav>
+
+    </header>
+</body>
+</html>
