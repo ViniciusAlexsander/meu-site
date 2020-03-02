@@ -5,15 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Temperature Converter</title>
 </head>
+<style>
+    * {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 40px;
+        font-weight: 600;
+    }
+    body {
+        display: flexbox;
+        text-align: justify;
+    }
+</style>
 <body>
     <div>
         <p>
-            <label>Fahrenheit</label>
-            <input id="inputFahrenheit" type="number" placeholder="Fahrenheit"
+            <label>Fahrenheit:</label>
+            <input id="inputFahrenheit" type="number"
             oninput="temperatureConverter(this.value)"
             onchange="temperatureConverter(this.value)">
         </p>
-        <p>Celsius: <span id="outputCelsius"></span></p>
+        <p class="teste">Celsius: <span id="outputCelsius"></span></p>
     </div>
 
 </body>
@@ -22,6 +33,6 @@
     /* When the input field receives input, convert the value from fahrenheit to celsius */
     function temperatureConverter(valNum) {
         valNum = parseFloat(valNum);
-        document.getElementById("outputCelsius").innerHTML = (valNum-32) / 1.8;
+        document.getElementById("outputCelsius").innerHTML = ((valNum-32) / 1.8).toFixed(2);
     }
 </script>
