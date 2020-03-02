@@ -8,11 +8,29 @@
 
     <style>
         body {
+            display: grid;
             margin: 0;
+            min-height: 100vh;
             font-family: 'Oswald',sans-serif;
             background-color: lightgray;
+            grid-template-rows: 100px 1fr 100px;
+            grid-template-areas: 'cabecalho' 'conteudos' 'footer';
+            
         }
-
+        header {
+            grid-area: cabecalho;
+        }
+        main {
+            grid-area: conteudos;
+            display: grid;
+            grid-template-rows: 1fr 1fr 1fr;
+            padding: 10px 20px;
+            
+        }
+        footer {
+            grid-area: footer;
+            background-color: black;
+        }
         .cabecalho {
             display: flex;
             align-items: center;
@@ -51,6 +69,12 @@
             background-color: gray;
             color: black;
         }
+        div .botao {
+            background-color: red;
+            color: #000000;
+            text-decoration: none;
+            padding: 3px 10px;
+        }
     </style>
 </head>
 <body>
@@ -67,17 +91,35 @@
                     <a href="#inicio">Início</a>
                 </li>
                 <li>
-                    <a href="/sobre.html">Sobre</a>
+                    <a href="#sobre">Sobre</a>
                 </li>
                 <li>
-                    <a href="/projetos">Projetos</a>
+                    <a href="#projetos">Projetos</a>
                 </li>
                 <li>
-                    <a href="/contato.html">Contato</a>
+                    <a href="#contato">Contato</a>
                 </li>
             </ul>
         </nav>
-
     </header>
+    <main>
+        <div id="projetos">
+            contato aqui
+        </div>
+        <div id="contato">
+            <div>
+                <h3>Temperature Converter</h3>
+                <p>Nesse pequeno projeto fiz um conversor de Fahrenheit para Celsius.</p>
+                <a href="/projetos/temperatureConverter.html" class="botao">Ver o projeto Completo</a>
+            </div>
+            
+        </div>
+        <div id="sobre">
+            sobre aqui?
+        </div>
+    </main>
+    <footer>
+        footer aqui
+    </footer>
 </body>
 </html>
