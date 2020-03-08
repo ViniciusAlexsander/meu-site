@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -18,13 +18,15 @@
 </style>
 <body>
     <div>
+        <h2>Conversor de Celsius</h2>
         <p>
-            <label>Fahrenheit:</label>
-            <input id="inputFahrenheit" type="number"
+            <label>Celsius:</label>
+            <input id="inputCelsius" type="number" placeholder="Digite apenas números"
             oninput="temperatureConverter(this.value)"
             onchange="temperatureConverter(this.value)">
         </p>
-        <p class="teste">Celsius: <span id="outputCelsius"></span></p>
+        <p>Fahrenheit: <span id="outputFahrenheit"></span></p>
+        <p>Kelvin: <span id="outputKelvin"></span></p>
     </div>
 
 </body>
@@ -33,6 +35,7 @@
     /* When the input field receives input, convert the value from fahrenheit to celsius */
     function temperatureConverter(valNum) {
         valNum = parseFloat(valNum);
-        document.getElementById("outputCelsius").innerHTML = ((valNum-32) / 1.8).toFixed(2);
+        document.getElementById("outputFahrenheit").innerHTML = ((valNum-32) / 1.8).toFixed(2);
+        document.getElementById("outputKelvin").innerHTML = (valNum + 273.15).toFixed(2);
     }
 </script>
