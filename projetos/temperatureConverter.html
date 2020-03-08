@@ -4,26 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Temperature Converter</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-<style>
-    * {
-        font-family: Arial, Helvetica, sans-serif;
-        font-size: 40px;
-        font-weight: 600;
-    }
-    body {
-        display: flexbox;
-        text-align: justify;
-    }
-</style>
 <body>
-    <div>
-        <h2>Conversor de Celsius</h2>
+    <h2>Conversor de Celsius para Fahrenheit e Kelvin</h2>
+    <div class="container" >
         <p>
             <label>Celsius:</label>
             <input id="inputCelsius" type="number" placeholder="Digite apenas números"
-            oninput="temperatureConverter(this.value)"
-            onchange="temperatureConverter(this.value)">
+            oninput="temperatureConverter()"
+            onchange="temperatureConverter()">
         </p>
         <p>Fahrenheit: <span id="outputFahrenheit"></span></p>
         <p>Kelvin: <span id="outputKelvin"></span></p>
@@ -33,9 +23,10 @@
 </html>
 <script>
     /* When the input field receives input, convert the value from fahrenheit to celsius */
-    function temperatureConverter(valNum) {
+    function temperatureConverter() {
+        valNum = document.getElementById("inputCelsius").value;
         valNum = parseFloat(valNum);
-        document.getElementById("outputFahrenheit").innerHTML = ((valNum-32) / 1.8).toFixed(2);
+        document.getElementById("outputFahrenheit").innerHTML = ((valNum * 1.8) + 32).toFixed(2);
         document.getElementById("outputKelvin").innerHTML = (valNum + 273.15).toFixed(2);
     }
 </script>

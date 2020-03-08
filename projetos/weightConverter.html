@@ -4,16 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <h2>Conversor de pesos</h2>
-    <div>
+    <div class="container">
         <p>
             <label>Digite o peso em Kg:</label>
             <input id="inputKilograms" type="number"
             placeholder="Kilogramas"
-            oninput="weightConverter(this.value)"
-            onchange="weightConverter(this.value)">
+            oninput="weightConverter()"
+            onchange="weightConverter()">
         </p>
 
         <p>Gramas: <span id="outputGramas"></span></p>
@@ -22,7 +23,8 @@
     
 </body>
 <script>
-    function weightConverter(valNum) {
+    function weightConverter() {
+        valNum = document.getElementById("inputKilograms").value;
         document.getElementById("outputGramas").innerHTML = (valNum*1000).toFixed(2);
         document.getElementById("outputLibras").innerHTML = (valNum*2.2046).toFixed(2);
     }
