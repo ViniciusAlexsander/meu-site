@@ -12,10 +12,10 @@ body {
 
 .container {
     border-style: solid;
-    border-radius: 15px;
-    border-width: 2px;
-    padding: 50px;
-    max-width: 600px;
+    border-radius: 1.5em;
+    border-width: 0.2em;
+    padding: 5em;
+    max-width: 60em;
     margin-top: 8%;
 }
 
