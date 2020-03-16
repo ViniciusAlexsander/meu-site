@@ -5,84 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Inicio</title>
     <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 
-    <style>
-        body {
-            display: grid;
-            margin: 0;
-            min-height: 100vh;
-            font-family: 'Oswald',sans-serif;
-            background-color: lightgray;
-            grid-template-rows: 100px 1fr 100px;
-            grid-template-areas: 'cabecalho' 'conteudos' 'footer';
-            
-        }
-        header {
-            grid-area: cabecalho;
-        }
-        main {
-            grid-area: conteudos;
-            display: grid;
-            grid-template-rows: 1fr 1fr 1fr;
-            padding: 10px 20px;
-            
-        }
-        footer {
-            grid-area: footer;
-            background-color: black;
-        }
-        .cabecalho {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            background-color: rgba(19, 104, 19, 0.336);
-            color: #eee;
-            border-bottom: solid 5px gray;
-            height: 100px;
-        }
-        .cabecalho a {
-            text-decoration: none;
-            color: white;
-            font-size: 1.5em;
-            padding: 10px 15px;
-        }
-
-        .logo img {
-            height: 150px;
-        }
-        .menu {
-            flex-grow: 10;
-        }
-        .menu ul {
-            display: flex;
-            flex-grow: 1;
-            list-style: none;
-            margin: 0;
-            padding: 0;
-            margin-left: 80px;
-        }
-        menu li {
-            margin: 15px;
-
-        }
-        .menu a:hover {
-            background-color: gray;
-            color: black;
-            padding-bottom: 35px;
-        }
-        div .botao {
-            background-color: lightblue;
-            color: #000000;
-            text-decoration: none;
-            padding: 10px 10px;
-            font-weight:900;
-            font-size: 20px;
-            border: 2px solid #000000;
-        }
-        div .botao:hover {
-            background-color: gray;
-        }
-    </style>
 </head>
 <body>
     <header class="cabecalho">
@@ -110,33 +34,33 @@
         </nav>
     </header>
     <main>
-        <div id="projetos">
+        <div class="topico" id="projetos">
             <h2>Meus projetos</h2>
-            <div>
+            <div class="projeto">
                 <h3>Temperature Converter</h3>
                 <p>Nesse pequeno projeto fiz um conversor de Celsius para Fahrenheit e Kelvin.</p>
                 <a href="/projetos/temperatureConverter.html" class="botao">Ver o projeto Completo</a>
             </div>
-            <div>
+            <div class="projeto">
                 <h3>Weight Converter</h3>
                 <p>Nesse pequeno projeto fiz um conversor de Kg para Libras e Gramas.</p>
                 <a href="/projetos/weightConverter.html" class="botao">Ver o projeto Completo</a>
             </div>
-            <div>
+            <div class="projeto">
                 <h3>BinToDec Converter</h3>
                 <p>Nesse projeto fiz um conversor de Binario para decimal.</p>
                 <a href="/projetos/converterBinToDec.html" class="botao">Ver o projeto Completo</a>
             </div>
-            <div>
+            <div class="projeto">
                 <h3>Clone do jogo Flappy Bird</h3>
                 <p>Fiz esse projeto durante o meu aprendizado da DOM, usando apenas JavaScript, Html e Css.</p>
                 <a href="/projetos/flappyBird/" class="botao">Ver o projeto Completo</a>
             </div>
         </div>
-        <div id="contato">
+        <div class="topico" id="contato">
             <h2>Entre em contato</h2>
         </div>
-        <div id="sobre">
+        <div class="topico" id="sobre">
             <h2>Sobre mim</h2>
         </div>
     </main>
