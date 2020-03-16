@@ -1,97 +1,94 @@
 body {
-    display: grid;
-    margin: 0;
-    min-height: 100vh;
-    font-family: 'Oswald',sans-serif;
-    background-color: whitesmoke;
-    /*background-color: lightgray;*/
-    grid-template-rows: 100px 1fr 100px;
-    grid-template-areas: 'cabecalho' 'conteudos' 'footer';
-    
+  display: grid;
+  margin: 0;
+  min-height: 100vh;
+  font-family: "Oswald", sans-serif;
+  background-color: #edf5fc;
+  /*background-color: lightgray;*/
+  grid-template-rows: 100px 1fr 100px;
+  grid-template-areas: "cabecalho" "conteudos" "footer";
 }
 header {
-    grid-area: cabecalho;
+  grid-area: cabecalho;
 }
 main {
-    grid-area: conteudos;
-    display: grid;
-    grid-template-rows: 1fr 1fr 1fr;
-    padding: 10px 20px;
-    
+  grid-area: conteudos;
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  padding: 10px 20px;
 }
 footer {
-    grid-area: footer;
-    background-color: black;
+  grid-area: footer;
+  background-color: rgba(14, 39, 60, 1);
 }
 h2 {
-    font-size: 40px;
+  font-size: 40px;
 }
 h3 {
-    font-size: 30px;
+  font-size: 30px;
 }
 p {
-    font-size: 25px;
+  font-size: 25px;
 }
 .cabecalho {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background-color: rgba(74, 48, 109, 1);;
-    /*background-color: #13681356;*/
-    color: #eee;
-    border-bottom: solid 5px gray;
-    height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgba(14, 39, 60, 1);
+  /*background-color: #13681356;*/
+  color: #eee;
+  border-bottom: solid 5px gray;
+  height: 100px;
 }
 .cabecalho a {
-    text-decoration: none;
-    color: white;
-    font-size: 1.5em;
-    padding: 10px 15px;
+  text-decoration: none;
+  color: white;
+  font-size: 1.5em;
+  padding: 10px 15px;
 }
 
 .logo img {
-    height: 150px;
+  height: 150px;
 }
 .menu {
-    flex-grow: 10;
+  flex-grow: 10;
 }
 .menu ul {
-    display: flex;
-    flex-grow: 1;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    margin-left: 80px;
+  display: flex;
+  flex-grow: 1;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  margin-left: 80px;
 }
 menu li {
-    margin: 15px;
-
+  margin: 15px;
 }
 .menu a:hover {
-    background-color: #808080;
-    color: black;
-    padding-bottom: 35px;
+  background-color: #808080;
+  color: black;
+  padding-bottom: 35px;
 }
 div .botao {
-    background-color:rgba(14, 39, 60, 1);
-    color: #ffffff;
-    text-decoration: none;
-    padding: 5px 5px;
-    font-size: 20px;
-    border: 2px solid #000000;
+  background-color: rgba(14, 39, 60, 1);
+  color: #ffffff;
+  text-decoration: none;
+  padding: 5px 5px;
+  font-size: 20px;
+  border: 2px solid rgba(14, 39, 60, 1);
 }
 div .botao:hover {
-    background-color: gray;
+  background-color: gray;
 }
 .projeto {
-    margin-top: 100px;
+  margin-top: 100px;
 }
 .projeto h3 {
-    margin-bottom: 5px;
+  margin-bottom: 5px;
 }
 .projeto p {
-    margin-top: 5px;
+  margin-top: 5px;
 }
 .topico {
-    margin-bottom: 150px;
+  margin-bottom: 150px;
 }
