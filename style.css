@@ -10,6 +10,8 @@ body {
 }
 header {
   grid-area: cabecalho;
+  position: fixed;
+  width: 100%;
 }
 main {
   grid-area: conteudos;
