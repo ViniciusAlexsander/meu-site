@@ -1,10 +1,9 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap");
 * {
   box-sizing: border-box;
-}
-
-@font-face {
-  font-family: "Pixel";
-  src: url(".../fonts/Pixel.ttf");
+  margin: 0;
+  padding: 0;
+  border: 0;
 }
 
 [wm-flappy] {
@@ -19,14 +18,16 @@
 body {
   background-color: #0d262d;
   color: #ffffff;
+  font-family: "Roboto", sans-serif;
 }
 h1 {
   font-size: 30px;
-  margin-bottom: 2px;
+  margin-bottom: 10px;
   margin-top: 10px;
 }
 p {
   font-size: 20px;
+  margin-bottom: 10px;
 }
 
 .passaro {
@@ -70,13 +71,13 @@ p {
   position: absolute;
   top: 10px;
   right: 10px;
-  font-family: Pixel;
+  font-family: "Roboto", sans-serif;
   font-size: 70px;
   z-index: 100;
 }
 
 .button {
-  font-family: Pixel;
+  font-family: "Roboto", sans-serif;
   border: 2px solid #000000;
   font-size: 25px;
   font-style: normal;
@@ -84,7 +85,7 @@ p {
 }
 
 .button:hover {
-  font-family: Pixel;
+  font-family: "Roboto", sans-serif;
   border: 2px solid #ffffff;
   font-size: 25px;
   font-style: normal;
