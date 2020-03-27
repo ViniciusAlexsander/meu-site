@@ -1,35 +1,38 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Bin2Dec</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <h2>Conversor de Binario para Decimal</h2>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h2>Conversor de Binario para Decimal</h2>
+    </header>
     <div class="container">
-        <p>
-            <label>Digite um número binario:</label>
-            <input id="inputBinary" type="number" placeholder="Digite apenas 0 ou 1"
-            onchange="Bin2Dec()"
-            oninput="Bin2Dec()">
-        </p>
-        <p>Decimal: <span id="outputDecimal"></span></p>
+      <p>
+        <label>Digite um número binario:</label>
+        <input
+          id="inputBinary"
+          type="number"
+          placeholder="Digite apenas 0 ou 1"
+          onchange="Bin2Dec()"
+          oninput="Bin2Dec()"
+        />
+      </p>
+      <p>Decimal: <span id="outputDecimal"></span></p>
     </div>
-
-</body>
+  </body>
 </html>
 <script>
-    function Bin2Dec() {
-
-        let binary = document.getElementById("inputBinary").value;
-        binary.split('').map((char) => {
-            if(char !== '0' && char !== '1') return alert("Apenas binario");
-
-        });
-        let decimal = parseInt(binary, 2);
-        document.getElementById("outputDecimal").innerHTML = decimal;
-        return true;
-    }
+  function Bin2Dec() {
+    let binary = document.getElementById("inputBinary").value;
+    binary.split("").map(char => {
+      if (char !== "0" && char !== "1") return alert("Apenas binario");
+    });
+    let decimal = parseInt(binary, 2);
+    document.getElementById("outputDecimal").innerHTML = decimal;
+    return true;
+  }
 </script>
